@@ -111,7 +111,7 @@ def get_distro():
         release = re.sub(r'\-.*\Z', '', ustr(platform.release()))
         osinfo = ['openbsd', release, '', 'openbsd']
     elif 'Linux' in platform.system():
-        osinfo = get_linux_distribution(0, 'alpine')
+        osinfo = get_linux_distribution(0, 'gentoo')
     elif 'NS-BSD' in platform.system():
         release = re.sub(r'\-.*\Z', '', ustr(platform.release()))
         osinfo = ['nsbsd', release, '', 'nsbsd']
