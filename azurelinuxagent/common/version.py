@@ -130,6 +130,9 @@ def get_distro():
 
     if os.path.exists("/etc/euleros-release"):
         osinfo[0] = "euleros"
+        
+    if os.path.exists("/etc/gentoo-release"):
+        osinfo[0] = "gentoo"
 
     if os.path.exists("/etc/UnionTech-release"):
         osinfo[0] = "uos"
